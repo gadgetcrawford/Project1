@@ -1,9 +1,9 @@
 .aloha {
     display: grid;
-    border: black solid 5px;
     height: 80px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
+    margin-left: 5px;
 }
 
 .logo {
@@ -17,6 +17,35 @@
     justify-self: end;
 }
 
+hr {
+    color: lightgray;
+    margin: 0 10px;
+    ;
+}
+
+.links {
+    margin: .5em;
+    display: flex;
+    grid-row: 1;
+    justify-content: space-evenly;
+}
+
+.section1 {
+    /*display: flex;
+     grid-row: 1; 
+    grid-column: 1;*/
+}
+
+.flower {
+    position: relative;
+}
+
+.girl {
+    z-index: 500;
+}
+
+.section1 img
+}
 .dot {
     height: 25px;
     width: 25px;
@@ -24,13 +53,11 @@
     border-radius: 50%;
     display: inline-block;
 }
-
 footer {
     background: black;
     color: white;
     text-align: center;
 }
-
 .fa {
     color: white;
 }
