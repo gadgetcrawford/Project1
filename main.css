@@ -1,3 +1,22 @@
+.aloha {
+    display: grid;
+    border: black solid 5px;
+    height: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+}
+
+.logo {
+    width: 30%;
+    padding: .5rem;
+}
+
+.cart {
+    width: 13%;
+    padding: .5rem;
+    justify-self: end;
+}
+
 .dot {
     height: 25px;
     width: 25px;
@@ -10,4 +29,8 @@ footer {
     background: black;
     color: white;
     text-align: center;
+}
+
+.fa {
+    color: white;
 }
