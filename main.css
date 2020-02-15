@@ -98,7 +98,7 @@ a:hover {
 }
 
 .section1 {
-    margin-top: 1%;
+    margin-top: 4%;
     display: grid;
     grid-template-columns: 1fr;
     *grid-template-rows: 1fr;
@@ -122,14 +122,14 @@ a:hover {
 }
 
 .text {
-    padding-top: 20%;
     grid-area: overlay;
     color: white;
-    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
 }
 
-.section1 .text {
-    font-family: '}Raleway-Light-MediumItalic';
+.section1 p {
+    font-family: 'Raleway-Light-MediumItalic';
 }
 
 .handcrafted {
@@ -144,11 +144,6 @@ a:hover {
     grid-template-areas: "mens mens" "trends glasses" "sales bags" "womens womens";
     grid-gap: .5em
 }
-
-
-/*.products img {
-    width: 100%;
-}*/
 
 .mens {
     grid-area: mens;
