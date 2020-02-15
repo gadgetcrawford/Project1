@@ -1,63 +1,219 @@
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url(/fonts/PlayfairDisplay-Bold.otf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-BoldItalic';
+    src: url(/fonts/PlayfairDisplay-BoldItalic.otf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Italic-Bold';
+    src: url(/fonts/PlayfairDisplay-Italic-Bold.otf)
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url(/fonts/PlayfairDisplay-Regular.otf)
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url(/fonts/Raleway-Light.otf)
+}
+
+@font-face {
+    font-family: 'Raleway-LightItalic';
+    src: url(/fonts/Raleway-LightItalic.otf)
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url(/fonts/Raleway-Medium.otf)
+}
+
+@font-face {
+    font-family: 'Raleway-MediumItalic';
+    src: url(/fonts/Raleway-MediumItalic.otf)
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0 3%;
+}
+
+body {
+    font-family: 'Raleway-Light', Helvetica, sans-serif;
+    font-size: 14px;
+    color: #2d2d2d;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: "PlayfairDisplay-Italic_Bold", Helvetica, sans-serif;
+}
+
+body img {
+    width: 100%;
+}
+
 .aloha {
     display: grid;
-    height: 80px;
+    height: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
     margin-left: 5px;
 }
 
 .logo {
-    width: 30%;
-    padding: .5rem;
+    width: 38%;
+    padding: .9rem;
 }
 
 .cart {
-    width: 13%;
-    padding: .5rem;
+    padding: 1rem;
+    width: 15%;
     justify-self: end;
 }
 
 hr {
-    color: lightgray;
-    margin: 0 10px;
-    ;
+    color: #969696;
+    margin-top: -10px;
+    width: 94%;
 }
 
 .links {
-    margin: .5em;
+    /* margin: 0 .5em; */
     display: flex;
     grid-row: 1;
     justify-content: space-evenly;
+    color: #e2574c;
+}
+
+a:hover {
+    color: #b64036;
 }
 
 .section1 {
-    /*display: flex;
-     grid-row: 1; 
-    grid-column: 1;*/
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    *grid-template-rows: 1fr;
+    grid-template-areas: "overlay";
+    height: auto;
 }
 
 .flower {
-    position: relative;
+    /* height: auto; */
+    grid-area: overlay;
+    align-self: end;
+    justify-self: center;
 }
 
 .girl {
-    z-index: 500;
+    max-width: 23%;
+    /* max-height: 60%; */
+    grid-area: overlay;
+    align-self: end;
+    justify-self: center;
 }
 
-.section1 img
+.text {
+    padding-top: 20%;
+    grid-area: overlay;
+    color: white;
+    font-size: 2rem;
 }
+
+.section1 .text {
+    font-family: '}Raleway-Light-MediumItalic';
+}
+
+.handcrafted {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mens mens" "trends glasses" "sales bags" "womens womens";
+    grid-gap: .5em
+}
+
+
+/*.products img {
+    width: 100%;
+}*/
+
+.mens {
+    grid-area: mens;
+}
+
+.trends {
+    grid-area: trends;
+}
+
+.glasses {
+    grid-area: glasses;
+}
+
+.sales {
+    grid-area: sales;
+}
+
+.bags {
+    grid-area: bags;
+}
+
+.womens {
+    grid-area: womens;
+}
+
+.loved {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.mobileHidden {
+    display: none;
+}
+
+.circles {
+    text-align: center;
+}
+
 .dot {
-    height: 25px;
-    width: 25px;
-    background-color: #bbb;
+    height: 9px;
+    width: 9px;
+    background-color: #969696;
     border-radius: 50%;
     display: inline-block;
 }
+
+.dot:nth-child(3) {
+    background-color: #242424;
+}
+
+.signup {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
 footer {
     background: black;
     color: white;
     text-align: center;
 }
+
 .fa {
     color: white;
 }
