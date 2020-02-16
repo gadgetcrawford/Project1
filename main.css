@@ -65,6 +65,10 @@
         width: 100%;
     }
     
+    a {
+        text-decoration: none;
+    }
+    
     .aloha {
         display: grid;
         height: auto;
@@ -101,7 +105,7 @@
         list-style-type: none;
     }
     
-    a {
+    .links a {
         color: e2547c;
     }
     
@@ -127,7 +131,6 @@
     
     .girl {
         max-width: 23%;
-        /* max-height: 60%; */
         grid-area: overlay;
         align-self: end;
         justify-self: center;
@@ -175,28 +178,68 @@
         grid-gap: .5em
     }
     
+    .products a {
+        color: white;
+    }
+    
     .mens {
         grid-area: mens;
+    }
+    
+    .men {
+        grid-area: mens;
+        align-self: center;
+        justify-self: center;
     }
     
     .trends {
         grid-area: trends;
     }
     
+    .trend {
+        grid-area: trends;
+        align-self: center;
+        justify-self: center;
+    }
+    
     .glasses {
         grid-area: glasses;
+    }
+    
+    .glass {
+        grid-area: glasses;
+        align-self: center;
+        justify-self: center;
     }
     
     .sales {
         grid-area: sales;
     }
     
+    .sale {
+        grid-area: sales;
+        align-self: center;
+        justify-self: center;
+    }
+    
     .bags {
         grid-area: bags;
     }
     
+    .bag {
+        grid-area: bags;
+        align-self: center;
+        justify-self: center;
+    }
+    
     .womens {
         grid-area: womens;
+    }
+    
+    .women {
+        grid-area: womens;
+        align-self: center;
+        justify-self: center;
     }
     
     .loved {
@@ -204,6 +247,11 @@
         justify-content: center;
         align-content: center;
         text-align: center;
+    }
+    
+    .most-loved {
+        font-family: 'PlayfairDisplay-Italic';
+        font-weight: normal;
     }
     
     .mobileHidden {
@@ -231,6 +279,13 @@
         justify-content: center;
         align-content: center;
         text-align: center;
+        margin-top: 5%;
+        grid-template-areas: "subscribe";
+    }
+    
+    .irregular {
+        align-self: center;
+        justify-self: center;
     }
     
     footer {
@@ -242,3 +297,16 @@
     .fa {
         color: white;
     }
+    /* .flower {
+        height: auto;
+        grid-area: overlay;
+        align-self: end;
+        justify-self: center;
+    }
+    
+    .girl {
+        max-width: 23%;
+        grid-area: overlay;
+        align-self: end;
+        justify-self: center;
+    } */
