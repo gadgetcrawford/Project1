@@ -125,6 +125,10 @@ ul {
     height: auto;
 }
 
+.section1 span {
+    display: block;
+}
+
 .flower {
     /* height: auto; */
     grid-area: overlay;
@@ -156,8 +160,7 @@ ul {
 
 .handcrafted {
     text-align: center;
-    margin-top: 2em;
-    width: 100%;
+    margin: 2em 2em;
 }
 
 .hand {
@@ -169,7 +172,6 @@ ul {
     line-height: 200%;
     font-weight: lighter;
     font-size: 85%;
-    margin-bottom: 5%;
 }
 
 .products {
@@ -310,19 +312,19 @@ ul {
     width: 90%;
     height: 3em;
     border: none;
-    border-radius: 4rem;
+    border-radius: 10 em;
+    color: #969696;
 }
 
 .submit-js {
     position: absolute;
-    right: 1.6em;
-    bottom: .4em;
+    right: 6%;
+    bottom: 1%;
     height: 2.5em;
     width: 6em;
     background: #e2574c;
     color: white;
     border-radius: 4em;
-    color: #969696;
 }
 
 .footer-about {
@@ -333,10 +335,32 @@ ul {
 }
 
 .footer-socials {
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 40%;
+    margin-left: 5em;
 }
 
 .fa {
     color: white;
+}
+
+
+/*Full Screen edia query */
+
+@media screen and (max-width: 1240px) and (min-width: 600px) {
+    .section1 span {
+        display: inline;
+    }
+    .fullscreen-break {
+        display: block;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "mens mens trends glasses" "sales bags womens womens";
+        grid-gap: .5em;
+        font-size: .8em;
+    }
 }
