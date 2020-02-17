@@ -301,20 +301,25 @@ a:hover {
 
 .submit-js {
     position: absolute;
-    left: 15em;
-    height: 2em;
+    right: 1.6em;
+    bottom: .4em;
+    height: 2.5em;
     width: 6em;
     background: #e2574c;
     color: white;
-    margin-top: .4em;
     border-radius: 4em;
 }
 
-footer {
+.footer-about {
+    position: relative;
     background: black;
     color: white;
     text-align: center;
     height: 18rem;
+}
+
+.fa {
+    display: inline;
 }
 
 .fa {
