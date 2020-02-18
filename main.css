@@ -89,6 +89,10 @@ a:hover {
     padding: .9rem;
 }
 
+.cart-fullscreen {
+    display: none;
+}
+
 .cart {
     padding: 1rem;
     width: 15%;
@@ -319,7 +323,7 @@ ul {
 .submit-js {
     position: absolute;
     right: 6%;
-    bottom: 1%;
+    bottom: 2%;
     height: 2.5em;
     width: 6em;
     background: #e2574c;
@@ -349,6 +353,18 @@ ul {
 /*Full Screen Media query */
 
 @media screen and (max-width: 1240px) and (min-width: 600px) {
+    .cart {
+        display: none;
+    }
+    .cart-fullscreen {
+        display: inline;
+        padding: 1rem;
+        width: 13%;
+        justify-self: end;
+    }
+    .top-line {
+        display: none;
+    }
     .section1 span {
         display: inline;
     }
@@ -367,10 +383,9 @@ ul {
         display: none;
     }
     .loved {
-        margin-top: 5em;
-    }
-    .loved h2 {
-        text-align: center;
+        position: relative;
+        margin-top: 3em;
+        justify-content: center;
     }
     .loved h3 {
         font-size: .8em;
@@ -378,23 +393,88 @@ ul {
         margin-left: 0em;
     }
     .mobile-hidden {
-        display: grid;
-    }
-    .loved p {
-        font-size: 1em;
+        display: inline;
+        line-height: .5em;
+        ;
     }
 }
 
 .mobile-hidden img {
-    margin-left: 0;
     margin-top: 2em;
-    width: 20%;
+    width: 40%;
 }
 
-.fullscreen-type {
-    margin-left: 7em;
-    text-align: left;
+.knit2-dress {
+    position: absolute;
+    top: 80%;
+    left: -3%;
 }
 
+.blue-shirt {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
 
+.stretch-dress {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+}
+
+.blue-hipster {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+
+.mobile-hidden p {
+    font-size: .6em;
+}
+
+.mobile-hidden h3 {
+    font-size: 1.2em;
+}
+
+.knit2-submit {
+    margin-left: 1%;
+    border: none;
+    color: white;
+    border-radius: 10em;
+    background: black
+}
+
+.blueshirt-submit {
+    margin-left: 1%;
+    border: none;
+    color: white;
+    border-radius: 10em;
+    background: black
+}
+
+.stretch-dress-submit {
+    margin-left: 1%;
+    border: none;
+    color: white;
+    border-radius: 10em;
+    background: black
+}
+
+.bluehipster-submit {
+    margin-left: 1%;
+    border: none;
+    color: white;
+    border-radius: 10em;
+    background: black
+}
+
+.circles {
+    margin-top: 25%;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 15%;
+    margin-left: 29em;
 }
