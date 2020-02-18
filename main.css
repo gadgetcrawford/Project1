@@ -357,7 +357,7 @@ ul {
         display: none;
     }
     .cart-fullscreen {
-        display: inline;
+        display: block;
         padding: 1rem;
         width: 13%;
         justify-self: end;
