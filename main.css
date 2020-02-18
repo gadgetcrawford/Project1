@@ -160,7 +160,7 @@ ul {
 
 .handcrafted {
     text-align: center;
-    margin: 2em 2em;
+    margin: auto;
 }
 
 .hand {
@@ -264,7 +264,7 @@ ul {
     font-size: 1.3em;
 }
 
-.mobileHidden {
+.mobile-hidden {
     display: none;
 }
 
@@ -312,7 +312,7 @@ ul {
     width: 90%;
     height: 3em;
     border: none;
-    border-radius: 10 em;
+    border-radius: 10em;
     color: #969696;
 }
 
@@ -346,7 +346,7 @@ ul {
 }
 
 
-/*Full Screen edia query */
+/*Full Screen Media query */
 
 @media screen and (max-width: 1240px) and (min-width: 600px) {
     .section1 span {
@@ -363,4 +363,38 @@ ul {
         grid-gap: .5em;
         font-size: .8em;
     }
+    .fullscreen-hidden {
+        display: none;
+    }
+    .loved {
+        margin-top: 5em;
+    }
+    .loved h2 {
+        text-align: center;
+    }
+    .loved h3 {
+        font-size: .8em;
+        color: #e2574c;
+        margin-left: 0em;
+    }
+    .mobile-hidden {
+        display: grid;
+    }
+    .loved p {
+        font-size: 1em;
+    }
+}
+
+.mobile-hidden img {
+    margin-left: 0;
+    margin-top: 2em;
+    width: 20%;
+}
+
+.fullscreen-type {
+    margin-left: 7em;
+    text-align: left;
+}
+
+
 }
